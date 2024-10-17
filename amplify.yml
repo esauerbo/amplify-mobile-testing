@@ -8,6 +8,7 @@ frontend:
   phases:
     preBuild:
       commands:
+        - envCache --set stackInfo ""
         - sh setup-codeartifact.sh
         - npm ci
         - npm install @aws-amplify/ui-react@${NPM_TAG}
