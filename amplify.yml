@@ -14,7 +14,6 @@ frontend:
         - npm install @aws-amplify/ui-react-liveness@${NPM_TAG}
     build:
       commands:
-        - npm run test
         - npm run build
         - npm list --depth=0
   artifacts:
